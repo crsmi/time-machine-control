@@ -1,7 +1,9 @@
 # time-machine-control
-**Time Machine Control** is simple GUI used to interact with a **Time Machine** race timer from [Fleet Feet Computers](timemachine.org). It can send commands (as documented in the [Time Machine Manual](resources/tm_manual.pdf#page=39)) over a serial connection to a Time Machine .
+**Time Machine Control** is simple GUI used to interact with a **Time Machine** race timer from [Fleet Feet Computers](https://timemachine.org). It can send commands (as documented in the [Time Machine Manual](resources/tm_manual.pdf#page=39)) over a serial connection to a Time Machine .
 
-<img src=/resources/TimeMachineControl.PNG style="max-width: 65%; max-height: 65%; margin: 0px 25% 10px" alt="Time Machine Control">
+<img src=/resources/TimeMachineControlApp.PNG alt="Time Machine Control" align="center">
+
+<hr>
 
 Version 0.1.0 is a simple applet that only covers sending of commands over a COM port to the Time Machine. A COM port connection to the Time Machine can be created with a RS232 to USB converter or by using a serial over network connection along with a virtual COM port.
 
@@ -32,7 +34,7 @@ Requires python to be installed and configured.
 Use the "COM Port" selection under Connection to specify which COM port the Time Machine is connected to.
 
 ### Commands
-There are five possible commands that can be sent to a Time Machine documented in the [manual](resources/tm_manual.pdf#page=39). Python code that the GUI uses to send these commands in contained in [commands.py](/commands.py)
+There are five possible commands that can be sent to a Time Machine documented in the [manual](resources/tm_manual.pdf#page=39). Python code that the GUI uses to send these commands in contained in [commands.py](./commands.py)
 
 **TIMECLOCK** - Set the time on the Time Clock. It may be started or stopped and the direction(up or down count) may be specified.
 
